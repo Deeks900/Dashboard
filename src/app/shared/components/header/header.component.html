@@ -1,1 +1,23 @@
-<p>header works!</p>
+<!-- <mat-toolbar> is a container for headers, titles, or actions -->
+<mat-toolbar color="primary">
+    <!-- That row -->
+    <mat-toolbar-row>
+        <!-- Icon part -->
+       <button mat-icon-button>
+        <mat-icon>menu</mat-icon>
+       </button>
+
+       <span>APP Logo</span>
+
+       <div fxFlex fxLayout="row" fxLayoutAlign="flex-end">
+            <ul fxLayout="row" fxLayoutGaps="20px">
+                <li>
+                    <button mat-icon-button>settings</button>
+                </li>
+            </ul>
+       </div>
+
+        <mat-icon class = "example-icon" aria-hidden="false" aria-label="Example heart icon">Favourite</mat-icon>
+        <mat-icon class = "example-icon" aria-hidden="false" aria-label="Example delete icon">Delete</mat-icon>
+    </mat-toolbar-row>
+</mat-toolbar>

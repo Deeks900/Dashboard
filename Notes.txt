@@ -11,4 +11,8 @@ ng g c shared/components/sidebar
 ng g c shared/components/header
 ng g c shared/components/footer
 ng g m shared
+npm i -s @angular/flex-layout @angular/cdk
 ng g c modules/posts
+
+Nice doc.
+https://github.com/angular/flex-layout
