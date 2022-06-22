@@ -1,0 +1,14 @@
+npm i @angular/flex-layout@9.0.0-beta.29 --save --force
+ng g c layout/default
+ng g m layout/default
+ng g c modules/dashboard
+
+Routing in angular
+Define your routes in your Routes array.
+Each route in this array is a JavaScript object that contains two properties. The first property, path, defines the URL path for the route.
+A child route is like any other route, in that it needs both a path and a component. The one difference is that you place child routes in a children array within the parent route.
+ng g c shared/components/sidebar
+ng g c shared/components/header
+ng g c shared/components/footer
+ng g m shared
+ng g c modules/posts
