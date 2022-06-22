@@ -3,7 +3,7 @@
     <!-- That row -->
     <mat-toolbar-row>
         <!-- Icon part -->
-       <button mat-icon-button>
+       <button mat-icon-button (click)="toggleSideBar()">
         <mat-icon>menu</mat-icon>
        </button>
 
@@ -12,12 +12,31 @@
        <div fxFlex fxLayout="row" fxLayoutAlign="flex-end">
             <ul fxLayout="row" fxLayoutGaps="20px">
                 <li>
-                    <button mat-icon-button>settings</button>
+                    <button mat-icon-button>
+                        <mat-icon>settings</mat-icon>
+                    </button>
+                </li>
+
+                <li>
+                    <button mat-icon-button>
+                        <mat-icon>help_outline</mat-icon>
+                    </button>
+                </li>
+
+                <li>
+                    <button mat-button [matMenuTriggerFor]="menu">
+                        <mat-icon>person_outline</mat-icon>
+                    </button>
+                    <mat-menu #menu="matMenu">
+                            <button mat-menu-item>Item 1</button>
+                            <button mat-menu-item>Item 2</button>
+                    </mat-menu>
+  
                 </li>
             </ul>
        </div>
 
-        <mat-icon class = "example-icon" aria-hidden="false" aria-label="Example heart icon">Favourite</mat-icon>
-        <mat-icon class = "example-icon" aria-hidden="false" aria-label="Example delete icon">Delete</mat-icon>
+        <!-- <mat-icon class = "example-icon" aria-hidden="false" aria-label="Example heart icon">Favourite</mat-icon>
+        <mat-icon class = "example-icon" aria-hidden="false" aria-label="Example delete icon">Delete</mat-icon> -->
     </mat-toolbar-row>
 </mat-toolbar>

@@ -7,7 +7,7 @@ import { RouterModule } from '@angular/router';
 import { PostsComponent } from 'src/app/modules/posts/posts.component';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { MatSidenavModule } from '@angular/material/sidenav';
-
+import {MatDividerModule} from '@angular/material/divider';
 
 @NgModule({
   declarations: [
@@ -21,6 +21,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
     SharedModule,
     // Module term was the error here !Important.Also uninstall angular service extension.
     MatSidenavModule,
+    MatDividerModule
    
   ]
 })

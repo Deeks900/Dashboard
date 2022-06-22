@@ -3,7 +3,8 @@
 <!-- This is the whole outer component -->
 <mat-drawer-container>
     <!-- This will get opened or closed based on this opened term -->
-    <mat-drawer mode="side" opened> 
+    <!-- concept of property binding -->
+    <mat-drawer mode="side" [opened]="sideBarOpen"> 
         <app-sidebar></app-sidebar>
     </mat-drawer>
 

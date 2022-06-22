@@ -8,6 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DefaultComponent implements OnInit {
 
+
+  // variable to operate sidebar state
+  sideBarOpen = false;
   constructor() { }
 
   ngOnInit(): void {
