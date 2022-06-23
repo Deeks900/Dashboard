@@ -13,13 +13,17 @@ import {MatListModule} from '@angular/material/list';
 import { RouterModule } from '@angular/router';
 import { AreaComponent } from './widgets/area/area.component';
 import { HighchartsChartModule } from 'highcharts-angular';
+import { CardComponent } from './widgets/card/card.component';
+import { ChartComponent } from './widgets/chart/chart.component';
 
 @NgModule({
   declarations: [
     HeaderComponent,
     FooterComponent,
     SidebarComponent,
-    AreaComponent
+    AreaComponent,
+    CardComponent,
+    ChartComponent
   ],
   imports: [
     CommonModule,
@@ -33,11 +37,14 @@ import { HighchartsChartModule } from 'highcharts-angular';
     RouterModule,
     HighchartsChartModule
   ],
+  // Now others can access these components in shared module
   exports: [
     HeaderComponent,
     FooterComponent,
     SidebarComponent,
-    AreaComponent
+    AreaComponent,
+    CardComponent,
+    ChartComponent,
   ]
 })
 export class SharedModule { }

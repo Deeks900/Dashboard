@@ -5,14 +5,32 @@
 
 <mat-divider></mat-divider>
 
-<div>
-    <div>Line Chart</div>
-    <div>Line Chart</div>
-    <div>Line Chart</div>
-    <div>Line Chart</div>
+<br />
+
+<div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="20px" class="stats-cards">
+   <!-- This will give us a card component from material -->
+    <mat-card fxFlex="50">
+     <app-widget-card></app-widget-card>
+   </mat-card>
+
+   <mat-card fxFlex="50">
+    <app-widget-chart></app-widget-chart>
+   </mat-card>
+
+   <!-- <mat-card fxFlex="25">
+    <app-widget-chart></app-widget-chart>
+   </mat-card>
+
+   <mat-card fxFlex="25">
+    <app-widget-chart></app-widget-chart>
+   </mat-card> -->
 </div>
 
+<br />
+
 <mat-divider></mat-divider>
+
+<br />
 
 <div>
     <div>Table</div>

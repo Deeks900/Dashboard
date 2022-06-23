@@ -24,3 +24,12 @@ ng g c shared/widgets/area
 
 HighCharts:
 https://www.npmjs.com/package/highcharts-angular
+
+ng g c shared/widgets/card
+https://stackblitz.com/edit/highcharts-angular-property-xxx-doesnt-exist-on-type-yyy?file=src%2Fapp%2Fapp.component.ts
+
+
+For drilldown concept
+https://stackoverflow.com/questions/49690245/drill-down-highcharts-not-working-in-angular-5
+
+Parent to child communication ==> Use @Input decorator
