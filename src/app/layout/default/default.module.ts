@@ -9,6 +9,7 @@ import { SharedModule } from 'src/app/shared/shared.module';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import {MatDividerModule} from '@angular/material/divider';
 
+
 @NgModule({
   declarations: [
     DefaultComponent,
@@ -21,7 +22,8 @@ import {MatDividerModule} from '@angular/material/divider';
     SharedModule,
     // Module term was the error here !Important.Also uninstall angular service extension.
     MatSidenavModule,
-    MatDividerModule
+    MatDividerModule,
+  
    
   ]
 })
