@@ -33,3 +33,6 @@ For drilldown concept
 https://stackoverflow.com/questions/49690245/drill-down-highcharts-not-working-in-angular-5
 
 Parent to child communication ==> Use @Input decorator
+
+HighCharts Github Repo
+https://www.npmjs.com/package/highcharts-angular
